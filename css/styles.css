@@ -1,0 +1,167 @@
+* {
+  font-family: verdana;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-bottom: 500px;
+}
+
+h2 {
+  margin-bottom: 1.6rem;
+  text-align: center;
+  color: #333;
+}
+
+#box-shadow-generator {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#controls-container,
+#preview {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Controls */
+
+.form-control {
+  display: flex;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-top: 1px dashed #ccc;
+}
+
+.form-control:last-child {
+    border-bottom: 1px dashed #ccc;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.range-input {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.range-input input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 25px;
+  background-color: #d3d3d3;
+  outline: none;
+}
+
+.range-input input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background-color: #4e7abb;
+  cursor: pointer;
+  border: 1px solid #1e1e1e;
+}
+
+.reference-input {
+  display: flex;
+  align-items: center;
+}
+
+.reference-input p {
+  margin-left: 4px;
+}
+
+.form-control input[type="text"] {
+  height: 30px;
+  width: 30px;
+  margin-left: 1rem;
+  text-align: center;
+}
+
+/* New Addons */
+
+#color-value {
+  min-width: 100px;
+}
+
+#inset {
+  align-self: start;
+  height: 20px;
+  width: 20px;
+}
+
+/* Preview */
+
+#box {
+  width: 100%;
+  height: 300px;
+  background-color: #cfce68;
+  border: 2px solid #fff;
+}
+
+/* CSS Generated Code */
+
+#generated-rules {
+  text-align: center;
+  color: #333;
+  padding: 2rem;
+}
+
+#generated-rules p {
+  margin-bottom: 0.5rem;
+}
+
+#rules-area {
+  background-color: #d3d3d3;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 2px solid #cfce68;
+  padding: 1rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#rules-area p {
+  line-height: 2rem;
+}
+
+#rules-area:hover {
+  background-color: #dfdfdf;
+}
+
+#copy-instructions {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* Mobile */
+
+@media (max-width: 425px) {
+  #box-shadow-generator {
+    flex-direction: column;
+  }
+
+  #controls-container,
+  #preview {
+    padding: 1rem 2rem;
+  }
+
+  #box {
+    width: 60%;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  #generated-rules {
+    margin-top: 7.5rem;
+  }
+}
